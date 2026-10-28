@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Website</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="image/Screenshot 2026-10-26 171151.png"
+                 alt="Food Website Logo">
+        </a>
+    </div>
+
+
+</nav>
+
+
+
+    <!-- MENU SECTION -->
+    <section class="menu" id="MENU">
+
+        <h1>Our <span>Menu</span></h1>
+
+        <div class="menu_box">
+
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="image/jeff.webp" alt="Prepared meal">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Food</h2>
+                    <p>Enjoy a delicious meal prepared with care and fresh ingredients.</p>
+                    <h3>KSh 500</h3>
+
+                    <div class="menu_icon" aria-label="Rated 4.5 out of 5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="#ORDER" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+
+
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="image/360_F_1631025273_5ZTIgsvcm5jLVO04UdfLCJimNAkWy6FF.jpg"
+                         alt="Freshly served dish">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Fresh Meal</h2>
+                    <p>Enjoy tasty food made to give you a satisfying experience.</p>
+                    <h3>KSh 500</h3>
+
+                    <div class="menu_icon" aria-label="Rated 4.5 out of 5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="#ORDER" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+
+
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="image/showcase-your-menu-this-realistic-260nw-2779686451.webp"
+                         alt="Food menu selection">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Special Dish</h2>
+                    <p>Try something special from our selection of delicious meals.</p>
+                    <h3>KSh 500</h3>
+
+                    <div class="menu_icon" aria-label="Rated 4.5 out of 5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="#ORDER" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>Kenya</p>
+                <p>Chuka</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Quick Links</h2>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="index.html#ABOUT">About</a></p>
+                <p><a href="#MENU">Menu</a></p>
+                <p><a href="gallery.html">Gallery</a></p>
+                <p><a href="review.html">Review</a></p>
+                <p><a href="#ORDER">Order</a></p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>Contact us for orders</p>
+                <p>Phone: Add your phone number</p>
+                <p>Email: Add your email address</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our Service</h2>
+                <p>Food Delivery</p>
+                <p>Easy Payments</p>
+                <p>Quality Food</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Follow Us</h2>
+
+                <div class="social_link">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="end">
+            Designed by
+            <span>
+                <i class="fa-solid fa-face-grin"></i>
+                NESH Debug
+            </span>
+        </p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener("click", function () {
+                const isOpen = navLinks.classList.toggle("active");
+
+                menuToggle.setAttribute("aria-expanded", isOpen);
+                menuToggle.setAttribute(
+                    "aria-label",
+                    isOpen ? "Close navigation" : "Open navigation"
+                );
+
+                const icon = menuToggle.querySelector("i");
+
+                if (icon) {
+                    icon.classList.toggle("fa-bars", !isOpen);
+                    icon.classList.toggle("fa-xmark", isOpen);
+                }
+            });
+
+            navLinks.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navLinks.classList.remove("active");
+                    menuToggle.setAttribute("aria-expanded", "false");
+
+                    const icon = menuToggle.querySelector("i");
+
+                    if (icon) {
+                        icon.classList.remove("fa-xmark");
+                        icon.classList.add("fa-bars");
+                    }
+                });
+            });
+        }
+
+        // Demonstration only: this does not send the order to a server.
+        const orderForm = document.getElementById("orderForm");
+        const orderMessage = document.getElementById("orderMessage");
+
+        orderForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            orderMessage.textContent =
+                "Your form is working, but online order submission has not been connected yet.";
+        });
+    </script>
+
+</body>
+</html>

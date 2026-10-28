@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Place an Order | Food Website</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" aria-label="Main navigation">
+
+        <div class="logo">
+            <a href="index.html" aria-label="Go to homepage">
+                <img src="image/Screenshot 2026-10-26 171151.png"
+                     alt="Food Website Logo">
+            </a>
+        </div>
+
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="main-nav-links">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+
+
+    </nav>
+
+    <!-- ORDER SECTION -->
+    <main>
+        <section id="ORDER">
+
+            <div class="order_heading">
+                <h1>Place Your <span>Order</span></h1>
+                <p>Fill in the form below to tell us what you would like to order.</p>
+            </div>
+
+            <div class="order_main">
+
+                <div class="order_image">
+                    <img
+                        src="image/showcase-your-menu-this-realistic-260nw-2779686451.webp"
+                        alt="Food selection available for ordering">
+                </div>
+
+                <form class="order_form" action="#" method="post">
+
+                    <div class="input">
+                        <label for="customer-name">Name</label>
+                        <input type="text"
+                               id="customer-name"
+                               name="name"
+                               placeholder="Your name"
+                               autocomplete="name"
+                               required>
+                    </div>
+
+                    <div class="input">
+                        <label for="customer-email">Email</label>
+                        <input type="email"
+                               id="customer-email"
+                               name="email"
+                               placeholder="Your email"
+                               autocomplete="email"
+                               required>
+                    </div>
+
+                    <div class="input">
+                        <label for="customer-phone">Phone Number</label>
+                        <input type="tel"
+                               id="customer-phone"
+                               name="phone"
+                               placeholder="Your phone number"
+                               autocomplete="tel"
+                               required>
+                    </div>
+
+                    <div class="input">
+                        <label for="order-quantity">Quantity</label>
+                        <input type="number"
+                               id="order-quantity"
+                               name="quantity"
+                               min="1"
+                               step="1"
+                               placeholder="Number of orders"
+                               required>
+                    </div>
+
+                    <div class="input">
+                        <label for="food-name">Your Order</label>
+                        <input type="text"
+                               id="food-name"
+                               name="food"
+                               placeholder="Food name"
+                               required>
+                    </div>
+
+                    <div class="input">
+                        <label for="delivery-address">Delivery Address</label>
+                        <input type="text"
+                               id="delivery-address"
+                               name="address"
+                               placeholder="Your delivery address"
+                               autocomplete="street-address"
+                               required>
+                    </div>
+
+                    <button type="submit" class="order_btn">
+                        Order Now
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>Kenya</p>
+                <p>Chuka</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Quick Links</h2>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="menu.html">Menu</a></p>
+                <p><a href="gallery.html">Gallery</a></p>
+                <p><a href="review.html">Review</a></p>
+                <p><a href="order.html">Order</a></p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>Contact us for orders</p>
+                <p>Phone: Add your phone number</p>
+                <p>Email: Add your email address</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our Services</h2>
+                <p>Food Delivery</p>
+                <p>Easy Payments</p>
+                <p>Quality Food</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Follow Us</h2>
+
+                <div class="social_link">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="end">
+            Designed by
+            <span>
+                <i class="fa-solid fa-face-grin" aria-hidden="true"></i>
+                NESH Debug
+            </span>
+        </p>
+    </footer>
+
+    <!-- MOBILE NAVIGATION SCRIPT -->
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector("#main-nav-links");
+
+        menuToggle.addEventListener("click", function () {
+            const isOpen = navLinks.classList.toggle("active");
+
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Close navigation" : "Open navigation"
+            );
+
+            const icon = menuToggle.querySelector("i");
+            icon.classList.toggle("fa-bars", !isOpen);
+            icon.classList.toggle("fa-xmark", isOpen);
+        });
+
+        navLinks.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("active");
+
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Open navigation");
+
+                const icon = menuToggle.querySelector("i");
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            });
+        });
+    </script>
+
+</body>
+</html>
+
